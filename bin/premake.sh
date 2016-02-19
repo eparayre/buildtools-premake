@@ -8,4 +8,4 @@ fi
 
 cwd=$(dirname $0)
 
-echo $cwd/$premake "$@"
+$cwd/$premake "$@"
