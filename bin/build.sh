@@ -10,7 +10,7 @@ if [ ! -d "premake-core" ]; then
     github=https://github.com/premake/premake-core.git
     branch=release
 
-    git clone --recursive -b $branch --single-branch $github premake-core
+    git clone --depth=1 --recursive -b $branch --single-branch $github premake-core
 fi
 
 if [ ! -f "premake-core/bin/release/premake5" ]; then
