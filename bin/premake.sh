@@ -1,6 +1,6 @@
 #!/bin/bash
 
-chmod +x build.sh
-./build.sh
+cwd=$(dirname $0)
 
-premake-core/bin/release/premake5 "$@"
+$cwd/build.sh
+$cwd/premake-core/bin/release/premake5 "$@"
