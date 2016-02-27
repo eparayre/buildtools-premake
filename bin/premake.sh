@@ -1,11 +1,5 @@
 #!/bin/bash
 
-if [[ $(uname) == 'Darwin' ]]; then
-	premake='osx/premake5'
-else
-	premake='linux/premake5'
-fi
+./build.sh
 
-cwd=$(dirname $0)
-
-$cwd/$premake "$@"
+premake-core/bin/release/premake5 "$@"
