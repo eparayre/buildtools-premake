@@ -7,6 +7,8 @@ if not exist premake-core (
     echo.[ clone premake ]
     echo.
 
+    mkdir premake-core
+
     set github=https://github.com/premake/premake-core.git
     set branch=release
 

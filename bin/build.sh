@@ -7,6 +7,8 @@ if [ ! -d "premake-core" ]; then
     echo [ clone premake ]
     echo -en "\n"
 
+    mkdir premake-core
+
     github=https://github.com/premake/premake-core.git
     branch=release
 
